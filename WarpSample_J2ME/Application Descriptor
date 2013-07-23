@@ -1,0 +1,7 @@
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: shephertz
+MIDlet-Jar-URL: WarpSample.jar
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-1: WarpSample,,app.StartMidlet
+MIDlet-Name: Warp_Sample
