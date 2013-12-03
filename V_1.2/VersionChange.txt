@@ -1,0 +1,4 @@
+API Added 
+PrivateChat, JoinRoomInRange, getRoomInRange, lockProperties, unlockProperties
+
+

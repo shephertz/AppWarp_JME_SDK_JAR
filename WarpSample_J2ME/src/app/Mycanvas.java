@@ -11,7 +11,7 @@ import com.shephertz.app42.json.JSONObject;
 
 
 
-public class Mycanvas extends Canvas {
+public class MyCanvas extends Canvas {
 
 	private StartMidlet midlet;
 	private WarpClient warpClient;
@@ -26,7 +26,7 @@ public class Mycanvas extends Canvas {
 	private Vector player = new Vector();
 	
 	
-	public Mycanvas(StartMidlet midlet, WarpClient warpClient) {
+	public MyCanvas(StartMidlet midlet, WarpClient warpClient) {
 		this.midlet = midlet;
 		this.warpClient = warpClient;
 		try {
@@ -41,7 +41,7 @@ public class Mycanvas extends Canvas {
 	
 	public void startGame(String name, int index){
 		System.out.println("startGame------------");
-		this.warpClient.joinRoomWithNUser(1);
+		this.warpClient.joinRoomInRange(1, 1, true);
 		monsterName = name;
 		monsterIndex = index;
 		

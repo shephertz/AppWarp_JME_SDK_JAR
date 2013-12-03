@@ -12,9 +12,9 @@ import com.shephertz.app42.json.JSONObject;
 public class NotificationListener implements NotifyListener{
 
 	
-	private Mycanvas mycanvas;
+	private MyCanvas mycanvas;
 	
-	public NotificationListener(Mycanvas mycanvas) {
+	public NotificationListener(MyCanvas mycanvas) {
 		this.mycanvas = mycanvas;
 	}
 	
@@ -78,6 +78,17 @@ public class NotificationListener implements NotifyListener{
 		String name = username;
 		String newname = name.substring(0, name.lastIndexOf('_'));
 		mycanvas.onUserLeft(newname);
+		
+	}
+
+	public void onPrivateChatReceived(String arg0, String arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onUserChangeRoomProperty(RoomData arg0, String arg1,
+			Hashtable arg2, Hashtable arg3) {
+		// TODO Auto-generated method stub
 		
 	}
 

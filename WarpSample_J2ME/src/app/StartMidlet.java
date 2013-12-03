@@ -15,19 +15,22 @@ public class StartMidlet extends MIDlet implements ConnectionRequestListener{
 
 	
 	private Display display;
-	private Mycanvas mycanvas;
-	private String API_KEY = "<Your API Key>";
-	private String SECRET_KEY = "<Your Secret Key>";
+	private MyCanvas mycanvas;
+//	private String API_KEY = "<Your API Key>";
+//	private String SECRET_KEY = "<Your Secret Key>";
 	private int userMonsterIndex;
 	private String userName;
 	
+	public static String API_KEY = "7eb1bc9e55767a734744d833a3fcf7cc0608710b0d90bcf22b65984b05b3ae16";
+    public static String SECRET_KEY = "f5485d157b11c7e08281b16c2d8c95c83d94dd78db7c2eae205073d5155100ec";
+   
 	private WarpClient warpClient;
 	
 	public StartMidlet() {
 		// TODO Auto-generated constructor stub4
 		display=Display.getDisplay(this);
 		initAppwarp();
-		mycanvas = new Mycanvas(this, warpClient);
+		mycanvas = new MyCanvas(this, warpClient);
 		
 
 	}

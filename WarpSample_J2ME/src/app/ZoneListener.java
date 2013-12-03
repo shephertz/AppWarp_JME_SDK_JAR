@@ -9,9 +9,9 @@ import com.shephertz.app42.appwarp.listener.ZoneRequestListener;
 
 public class ZoneListener implements ZoneRequestListener{
 
-	private Mycanvas mycanvas;
+	private MyCanvas mycanvas;
 	
-	public ZoneListener(Mycanvas mycanvas) {
+	public ZoneListener(MyCanvas mycanvas) {
 		this.mycanvas = mycanvas;
 	}
 	

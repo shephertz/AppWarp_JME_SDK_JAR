@@ -7,9 +7,9 @@ import com.shephertz.app42.appwarp.listener.RoomRequestListener;
 public class RoomListener implements RoomRequestListener{
 
 	
-	private Mycanvas mycanvas;
+	private MyCanvas mycanvas;
 	
-	public RoomListener(Mycanvas mycanvas) {
+	public RoomListener(MyCanvas mycanvas) {
 		this.mycanvas = mycanvas;
 	}
 	
@@ -50,6 +50,16 @@ public class RoomListener implements RoomRequestListener{
 	}
 
 	public void onUpdatePropertyDone(LiveRoomInfoEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onLockPropertiesDone(byte arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onUnlockPropertiesDone(byte arg0) {
 		// TODO Auto-generated method stub
 		
 	}
